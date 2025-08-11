@@ -1,0 +1,81 @@
+
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  font-family: 'Courier New', Courier, monospace;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 900;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  min-width: 320px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+button,.button_1,.button_2 {
+  border-radius: 2rem;
+  padding: 0.6em 1.2em;
+  font-weight: 900;
+  font-family: inherit;
+  cursor: pointer;
+  transition:300ms ease-in-out;
+}
+
+input,select,textarea{
+  border: 1px solid #898c8f;
+  background-color: rgb(249, 245, 245);
+  border-color: rgb(135, 104, 104);
+  padding:10px 15px ; 
+  border-radius:10px ;
+  outline: none;
+}
+
+.button_1,.button_2:hover{
+  border: 2px solid;
+  border-color: rgb(107, 107, 250);
+  background-color: white;
+  color:#060b64;
+}
+.button_2,.button_1:hover{
+  border: 2px solid transparent;
+  background-color: #060b64;
+  color: white;
+}
+
+#card_button{
+  border-radius:5px;
+  padding: 0.6em 1.2em;
+  font-weight: 900;
+  font-family: inherit;
+  cursor: pointer;
+  transition:300ms ease-in-out;
+  background: #060b64;
+  color:white;
+  font-size: 12px;
+  border: 1px solid transparent;
+}
+
+#card_button:hover{
+  background-color: white;
+  color: #060b64;
+  border-color: #060b64;
+}
