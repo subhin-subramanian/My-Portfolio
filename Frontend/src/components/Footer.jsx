@@ -8,7 +8,7 @@ import { MdCopyright } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="bg-gradient-to-l from-[#d4d7da]">
+    <div className="">
 
       <div className='flex flex-col md:flex-row gap-15 px-10 py-5 border-t-5 rounded-xl justify-between'>
 

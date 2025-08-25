@@ -50,28 +50,32 @@ function Home() {
 
   return (
 
-    <div className="flex flex-col md:flex-row p-5 px-10 gap-10 mx-auto justify-center min-h-screen items-center">
-      <div className="min-w-[220px] sm:min-w-[280px] max-w-xs aspect-square overflow-hidden shadow-2xl rounded-2xl hover:scale-110 transition-all">
-        <img src={coverPic} alt="ProfilePic" className='w-full h-full rounded-2xl  ' />
-      </div>
-      <div className="flex flex-col gap-5 items-center justify-center">
-        <span className='font-bold text-xl text-blue-500'>Hi, I'm <span className='text-[#060b64] dark:text-white text-3xl'>Subhin.MS</span> starting as a <span className='text-[#060b64] dark:text-white text-3xl'> MERN Stack Developer</span></span>
-        <div className="flex gap-4">
-          <button onClick={()=>setHireModal(!hireModal)} className='button_1 shadow-xl dark:!border-blue-500'>Hire Me</button>
-          <a href='/RESUME.pdf' download className='button_2 shadow-xl dark:!border-blue-500'>Download CV</a>
+    <div className="min-h-screen max-w-6xl mx-auto p-5 md:p-10 flex flex-wrap items-center justify-center">
+      {/* Hero Section */}
+      <div className="flex flex-col md:flex-row gap-10 justify-center items-center ">
+        <div className="w-60 lg:w-250 max-w-[300px] shadow-lg shadow-[#060b64] rounded-full hover:scale-110 
+        transition-all duration-300 border-[#060b64]  border-2 p-1">
+          <img src={coverPic} alt="ProfilePic" className='w-full h-full rounded-full  ' />
         </div>
-        <p className='text-shadow-lg'>I'm a passionate MERN Stack Developer skilled in building modern, full-stack web applications using MongoDB, Express.js, React, and Node.js. I love solving real-world problems through clean, efficient code and intuitive user interfaces. Currently exploring new technologies and working on personal projects to sharpen my skills.
-        Let’s build something great together 👋!
-        </p>
-        <div className="flex gap-10 text-4xl">
-          <span className='text-xl text-blue-500 font-bold flex items-center gap-2'>Find me on other platforms <FaArrowRight /></span>
-          <a href='https://github.com/subhin-subramanian' target='_blank' rel='noopener noreferrer'><img src={git} alt="git" className='h-10 rounded-lg'/></a>
-          <a href='https://in.linkedin.com/in/subhin-ms-433a54167?trk=people-guest_people_search-card' target='_blank' rel='noopener noreferrer'><img src={linkdn} alt="linkedIn" className='h-10 rounded-xl'/></a>
-          <a href='https://www.instagram.com/subhin_ms' target='_blank' rel='noopener noreferrer'><img src={insta} alt="instagram" className='h-10 rounded-xl'/></a>   
-          <a href='https://www.youtube.com/@Subhin_Dev' target='_blank' rel='noopener noreferrer'><img src={youtube} alt="youtube" className='h-10 rounded-xl'/></a> 
+        <div className="flex flex-col gap-10 items-center justify-center">
+          <span className='text-xl text-blue-500 tracking-widest'>Hi, I'm <span className='text-[#060b64] dark:text-white text-4xl font-recursive'>Subhin.MS</span> starting as a <span className='text-[#060b64] dark:text-white text-3xl font-recursive'> MERN Stack Developer</span></span>
+          <div className="flex gap-4">
+            <button onClick={()=>setHireModal(!hireModal)} className='button_1 shadow-xl dark:!border-blue-500'>Hire Me</button>
+            <a href='/RESUME.pdf' download className='button_2 shadow-xl dark:!border-blue-500'>Download CV</a>
+          </div>
           
+          <div className="flex flex-wrap gap-6 text-4xl">
+            <span className='text-[15px] text-blue-500 flex items-center gap-2 tracking-widest'>Find me on other platforms <FaArrowRight /></span>
+            <a href='https://github.com/subhin-subramanian' target='_blank' rel='noopener noreferrer'><img src={git} alt="git" className='h-10 rounded-lg shadow-lg dark:border'/></a>
+            <a href='https://in.linkedin.com/in/subhin-ms-433a54167?trk=people-guest_people_search-card' target='_blank' rel='noopener noreferrer'><img src={linkdn} alt="linkedIn" className='h-10 rounded-xl shadow-lg'/></a>
+            <a href='https://www.instagram.com/subhin_ms' target='_blank' rel='noopener noreferrer'><img src={insta} alt="instagram" className='h-10 rounded-xl shadow-lg'/></a>   
+            <a href='https://www.youtube.com/@Subhin_Dev' target='_blank' rel='noopener noreferrer'><img src={youtube} alt="youtube" className='h-10 rounded-xl shadow-lg'/></a> 
+          </div>
+
         </div>
       </div>
+      {/* Skills Section */}
+
 
       {hireModal && 
         <div className='fixed inset-0 flex items-center justify-center z-50 bg-black/50 backdrop-blur-sm'>

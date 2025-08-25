@@ -1,9 +1,13 @@
 
 @import "tailwindcss";
 @custom-variant dark (&:is(.dark *));
+@import "@fontsource/montserrat/700.css"; /* Bold headings */
+@import "@fontsource/montserrat/900.css"; /* Extra bold for hero titles */
+@import "@fontsource/inter/400.css";      /* Normal body */
+@import "@fontsource/inter/500.css";      /* Medium body */
 
 :root {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Poppins', sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -11,12 +15,13 @@
 }
 
 a {
+  font-family: 'inter', sans-serif;
   font-weight: 900;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  color: #afb2b4;
 }
 
 body {
@@ -25,9 +30,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1 {
+  font-family: 'inter', sans-serif;
   font-size: 3em;
 }
 
@@ -78,4 +85,8 @@ input,select,textarea{
   background-color: white;
   color: #060b64;
   border-color: #060b64;
+}
+.font-recursive {
+  font-family:  "Brush Script MT", cursive;
+  font-variation-settings: "MONO" 0, "CASL" 1;
 }
