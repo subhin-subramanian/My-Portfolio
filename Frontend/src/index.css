@@ -22,6 +22,11 @@ a {
 
 a:hover {
   color: #afb2b4;
+  transform: scale(1.2);
+  transition: 400ms ease-in-out;
+}
+a.no-hover:hover {         
+  transform: none;      
 }
 
 body {
@@ -90,3 +95,41 @@ input,select,textarea{
   font-family:  "Brush Script MT", cursive;
   font-variation-settings: "MONO" 0, "CASL" 1;
 }
+
+/* Marque ribbon for home page  */
+@layer utilities{
+  @keyframes ribbon-scroll{
+    0% {transform: translate(0);}
+    100% {transform: translate(-50%);}
+  }
+
+  .animate-ribbon{
+    animation: ribbon-scroll 20s linear infinite;
+    will-change: transform;
+    display: flex;
+    width: max-content;
+  }
+
+  .pause-on-hover:hover .animate-ribbon {
+    animation-play-state: paused;
+  }
+
+  .mask-fade{
+    -webkit-mask-image: linear-gradient(90deg, transparent, blue 10%, blue 90%, transparent);
+    mask-image: linear-gradient(90deg, transparent, blue 10%, blue 90%, transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .animate-ribbon{
+      animation: none;
+      transform:none;
+    }
+  }
+}
+
+.home_band_icons {
+  height: 5rem;
+  width: 5rem;
+  object-fit: contain;
+}
+

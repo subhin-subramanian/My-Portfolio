@@ -5,6 +5,29 @@ import image_21 from './images/1Cent_Property.png';
 import image_22 from './images/Blog _thumb.png';
 import image_23 from './images/Core_it_app_thumb.png';
 
+import coverPic from './images/coverPic.jpg'
+
+import insta from './images/insta.jpg';
+import linkdn from './images/linkdn.png';
+import git from './images/git.png';
+import youtube from './images/youtube.png';
+
+import chatgpt from './home_icons/chatgpt.png'
+import cloudinary from './home_icons/cloudinary.png'
+import express_icon from './home_icons/express_icon.png'
+import git_icon from './home_icons/git_icon.png'
+import github from './home_icons/github.png'
+import js_icon from './home_icons/js_icon.png'
+import json_icon from './home_icons/json_icon.png'
+import mongodb from './home_icons/mongodb.png'
+import mongoose from './home_icons/mongoose.png'
+import node_icon from './home_icons/node_icon.png'
+import razorpay from './home_icons/razorpay.png'
+import react_icon from './home_icons/react_icon.png'
+import redux from './home_icons/redux.png'
+import vs from './home_icons/vs.png'
+
+
 export const projects =[
     {
         _id : 121,
@@ -73,3 +96,25 @@ export const projects =[
         live_link :''
     }
 ]
+
+export const icons = {
+    coverPic,
+    insta,
+    linkdn,
+    git,
+    youtube,
+    chatgpt,
+    cloudinary,
+    mongoose,
+    node_icon,
+    razorpay,
+    react_icon,
+    redux,
+    vs,
+    express_icon,
+    git_icon,
+    github,
+    js_icon,
+    json_icon,
+    mongodb,
+}
