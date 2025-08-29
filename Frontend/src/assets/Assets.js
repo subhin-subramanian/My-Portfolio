@@ -26,6 +26,13 @@ import razorpay from './home_icons/razorpay.png'
 import react_icon from './home_icons/react_icon.png'
 import redux from './home_icons/redux.png'
 import vs from './home_icons/vs.png'
+import render_icon from './home_icons/render_icon.png'
+import netlify from './home_icons/netlify.png'
+
+import website from './services_images/website.jpg'
+import frontend from './services_images/frontend.webp'
+import backend from './services_images/backend.jpg'
+import mern from './services_images/MERN.jpg'
 
 
 export const projects =[
@@ -117,4 +124,46 @@ export const icons = {
     js_icon,
     json_icon,
     mongodb,
+    render_icon,
+    netlify
 }
+
+export const services = [
+    {
+        id: 1,
+        title: "Boost Your Online Presence with Custom made Websites",
+        description:['I build responsive and modern websites tailored to your brand and marketing strategy using React and Tailwind CSS',
+            'In my projects you can see that i started with HTML,CSS,JS sites and shifted to React due to market demand, functionality and design features',
+            'My focus is on clean design, smooth performance, and user-friendly experiences'
+        ],
+        image: website
+    },
+    {
+        id: 2,
+        title: "Front-End Development Services",
+        description:['From landing pages to complete web applications, I create fast and responsive interfaces using React.js, Tailwind CSS, and JavaScript',
+            'If you have an application idea and want to create an app, sent me the proposal, i will convert it to an app',
+            'If you are a backend developer and want landing pages or UI - message me to colaborate'
+        ],
+        image: frontend
+    },
+    {
+        id: 3,
+        title: "Back-End Development Services",
+        description:['I offer back-end development services using Node.js, Express, and MongoDB to create robust and scalable server-side applications.',
+            'I can build RESTful APIs, integrating databases, and ensuring security and performance.',
+            'If you need a back-end solution for your application, feel free to reach out!'
+        ],
+        image: backend
+    },
+    {
+        id: 4,
+        title: 'Full Stack Applications (MERN)',
+        description:['Develop dynamic and scalable applications using the MERN stack (MongoDB, Express, React, Node.js).',
+            'Implement login/signup systems, JWT authentication, and role-based access control for enhanced security',
+            'All my works are fully responsive, optimized for all screen sizes, and designed to deliver consistent performance across devices'
+        ],
+        image: mern
+    }
+
+]

@@ -1,6 +1,7 @@
 
 @import "tailwindcss";
 @custom-variant dark (&:is(.dark *));
+
 @import "@fontsource/montserrat/700.css"; /* Bold headings */
 @import "@fontsource/montserrat/900.css"; /* Extra bold for hero titles */
 @import "@fontsource/inter/400.css";      /* Normal body */
