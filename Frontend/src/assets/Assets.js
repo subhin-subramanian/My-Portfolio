@@ -1,8 +1,8 @@
-import image_1 from './images/Core It_thumb.png';
+import image_1 from './images/Core_It_thumb.png';
 import image_2 from './images/Digital_village_thumb.png';
-import image_11 from './images/Cable Network thumb.png';
+import image_11 from './images/Cable_Network_thumb.png';
 import image_21 from './images/1Cent_Property.png';
-import image_22 from './images/Blog _thumb.png';
+import image_22 from './images/Blog_thumb.png';
 import image_23 from './images/Core_it_app_thumb.png';
 
 import coverPic from './images/coverPic.jpg'
@@ -74,7 +74,7 @@ export const projects =[
         description :'A react website created for the customers to checkout the plans, register complains and raise queries to a Cable Network provider.' ,
         video_link :'https://www.youtube.com/watch?v=2WIy6xggqP4&t=36s',
         github_link :'https://github.com/subhin-subramanian/Cable-Website',
-        live_link :''
+        live_link :'https://d-starcablenetwork.netlify.app/complaints'
     },
     {
         _id : 141,
@@ -107,7 +107,7 @@ export const projects =[
         description : 'A MERN application for a blogging platform with user authentication, post creation, and comment (creation, Deletion and liking) features',
         video_link :'',
         github_link :'https://github.com/subhin-subramanian/Core-It-App',
-        live_link :''
+        live_link :'https://core-it-solutions.onrender.com/'
     }
 ];
 
