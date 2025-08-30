@@ -1,4 +1,4 @@
-import image_1 from './images/Core_It_thumb.png';
+import image_1 from './images/Core_It_Thumb.png';
 import image_2 from './images/Digital_village_thumb.png';
 import image_11 from './images/Cable_Network_thumb.png';
 import image_21 from './images/1Cent_Property.png';
