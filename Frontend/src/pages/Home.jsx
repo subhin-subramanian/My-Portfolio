@@ -45,43 +45,43 @@ function Home() {
   return (
 
     <div className="min-h-screen mx-auto p-5 md:p-10 flex flex-wrap items-center justify-center">
-      {/* Hero Section */}
+      {/* Hero Section */}  
       <div className="max-w-6xl flex flex-col md:flex-row gap-10 justify-center items-center ">
         <div className="w-60 lg:w-250 max-w-[300px] shadow-lg shadow-[#060b64] rounded-full hover:scale-110 
         transition-all duration-300 border-[#060b64]  border-2 p-1">
-          <img src={icons.coverPic} alt="ProfilePic" className='w-full h-full rounded-full  ' />
+          <img src={icons.coverPic} alt="ProfilePic" className='w-full h-full rounded-full' />
         </div>
         <div className="flex flex-col gap-10 items-center justify-center">
-          <span className='text-xl text-blue-500 tracking-widest'>Hi, I'm <span className='text-[#060b64] dark:text-white text-4xl font-recursive'>Subhin.MS</span> starting as a <span className='text-[#060b64] dark:text-white text-3xl font-recursive'> MERN Stack Developer</span></span>
+          <span className='text-center text-xl text-blue-500 tracking-widest'>Hi, I'm <span className='text-[#060b64] dark:text-white text-4xl font-recursive'>Subhin.MS</span> starting as a <span className='text-[#060b64] dark:text-white text-3xl font-recursive'> MERN Stack Developer</span></span>
           <div className="flex gap-4">
             <button onClick={()=>setHireModal(!hireModal)} className='button_1 shadow-md shadow-blue-500 dark:!border-blue-500'>Hire Me</button>
             <a href='/RESUME.pdf' download className='button_2 dark:!border-blue-500 shadow-md shadow-blue-500 no-hover'>Download CV</a>
           </div>
           
           <div className="flex flex-wrap gap-6 text-4xl">
-            <span className='text-[15px] text-blue-500 flex items-center gap-2 tracking-widest'>Find me on other platforms <FaArrowRight /></span>
+            <span className='text-[15px] text-blue-500 flex items-center gap-2  lg:tracking-widest'>Find me on other platforms <FaArrowRight /></span>
 
             <a href='https://github.com/subhin-subramanian' target='_blank' rel='noopener noreferrer'>
              <div className="border-2 border-[#060b64] rounded-full p-1">
-              <img src={icons.git} alt="git" className='h-10 rounded-full shadow-lg dark:border shadow-blue-500'/>
+              <img src={icons.git} alt="git" className='h-5 md:h-10 rounded-full shadow-lg dark:border shadow-blue-500'/>
              </div> 
             </a>
             
             <a href='https://in.linkedin.com/in/subhin-ms-433a54167?trk=people-guest_people_search-card' target='_blank' rel='noopener noreferrer'>
             <div className="border-2 border-[#060b64] rounded-full p-1">
-              <img src={icons.linkdn} alt="linkedIn" className='h-10 rounded-full shadow-lg dark:border shadow-blue-500'/>
+              <img src={icons.linkdn} alt="linkedIn" className='h-5 md:h-10 rounded-full shadow-lg dark:border shadow-blue-500'/>
             </div>
             </a>
             
             <a href='https://www.instagram.com/subhin_ms' target='_blank' rel='noopener noreferrer'>
             <div className="border-2 border-[#060b64] rounded-full p-1">
-              <img src={icons.insta} alt="instagram" className='h-10 rounded-full shadow-lg dark:border shadow-blue-500'/>
+              <img src={icons.insta} alt="instagram" className='h-5 md:h-10 rounded-full shadow-lg dark:border shadow-blue-500'/>
             </div>
             </a>  
 
             <a href='https://www.youtube.com/@Subhin_Dev' target='_blank' rel='noopener noreferrer'>
             <div className="border-2 border-[#060b64] rounded-full p-1">
-              <img src={icons.youtube} alt="youtube" className='h-10 rounded-full shadow-lg dark:border shadow-blue-500'/>
+              <img src={icons.youtube} alt="youtube" className='h-5 md:h-10 rounded-full shadow-lg dark:border shadow-blue-500'/>
             </div>
             </a>
 
@@ -91,7 +91,7 @@ function Home() {
       </div>
 
       {/* Skills Section */}
-      <div className="overflow-hidden bg-gray-00 py-4 mask-fade pause-on-hover">
+      <div className="overflow-hidden dark:bg-gray-100 py-4 mask-fade pause-on-hover">
         <div className="flex gap-10 animate-ribbon">
           {/* First set of icons */}
           <img src={icons.chatgpt} alt="chatgpt" className='home_band_icons'/>
@@ -108,6 +108,8 @@ function Home() {
           <img src={icons.js_icon} alt="js" className='home_band_icons'/>
           <img src={icons.json_icon} alt="json" className='home_band_icons'/>
           <img src={icons.mongodb} alt="mongodb" className='home_band_icons'/>
+          <img src={icons.render_icon} alt="render" className='home_band_icons'/>
+          <img src={icons.netlify} alt="netlify" className='home_band_icons'/>
         </div>
       </div>
 

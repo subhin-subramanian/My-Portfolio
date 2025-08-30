@@ -4,15 +4,14 @@ import ProjectCard from "../components/ProjectCard.jsx";
 
 function Projects() {
   const [category,setCategory] = useState('all');
-  console.log(category);
-  
 
   const handleCategoryChange=(e)=>{
     setCategory(e.target.value)
   }
+  
   return (
     <div className='min-h-screen px-5 md:px-10 lg:px-20 py-5 sm:py-10 flex flex-col gap-5 sm:gap-10'>
-      <h1 className='font-bold text-center py-5 text-shadow-lg'>My Projects</h1>
+      <h1 className='!text-4xl sm:!text-5xl font-bold text-center py-5 text-shadow-lg font-recursive underline underline-offset-8 decoration-2'>My Projects</h1>
 
       {/* Category selection for large screens */}
       <div className="hidden md:flex flex-col sm:flex-row justify-center gap-5 text-xs">
@@ -22,7 +21,7 @@ function Projects() {
         <button onClick={handleCategoryChange} value='MERN' className={`${category === 'MERN' ? 'bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-white' : 'bg-white border border-blue-500 text-blue-500'}`}>MERN Stack</button>
       </div>
 
-      {/* Category selection for samll screens */}
+      {/* Category selection for small screens */}
       <div className="flex md:hidden items-center gap-3 justify-center">
         <label htmlFor="category_name" className="text-sm font-bold">Category:</label>
         <select id="category_name" name="category_name" onChange={handleCategoryChange}>

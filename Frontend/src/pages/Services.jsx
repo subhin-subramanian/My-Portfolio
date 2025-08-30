@@ -1,8 +1,8 @@
 import { services } from "../assets/Assets"
 function Services() {
   return (
-    <div className='min-h-screen w-full mx-auto text-blue-800 my-5'>
-      <h1 className='font-bold text-center py-5 text-shadow-lg font-recursive underline underline-offset-8 decoration-2'>Services Offering</h1>
+    <div className='min-h-screen w-full mx-auto text-blue-800 my-5 sm:my-10'>
+      <h1 className='!text-4xl sm:!text-5xl font-bold text-center py-5 text-shadow-lg font-recursive underline underline-offset-8 decoration-2'>Services Offering</h1>
 
       {/* Services Cards */}
       <div className="mt-10 dark:text-gray-400 flex flex-col gap-10">
@@ -17,13 +17,11 @@ function Services() {
                 ))}
               </ul>
             </div>
-          <img src={service.image} alt="" className="sm:w-1/3 h-60 rounded-lg shadow-md" />
+            <img src={service.image} alt="" className="sm:w-1/3 h-60 rounded-lg shadow-md" />
           </div> ))}
-        
 
       </div>
     </div>
   )
 }
-
 export default Services

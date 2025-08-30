@@ -1,7 +1,7 @@
 
 function ProjectCard({ project }) {
   return (
-    <div className="shadow-lg p-3 sm:p-5 w-80 sm:w-100 h-140 rounded-lg flex flex-col gap-4">
+    <div className="shadow-lg dark:border dark:border-gray-700 p-3 sm:p-5 w-80 sm:w-100 h-140 rounded-lg flex flex-col gap-4 hover:translate-x-3 hover:-translate-y-3 transition-transform duration-300">
       <img src={project.image} alt="Project_image" className="w-full max-h-50 rounded-lg shadow-sm" />
       <span className="font-bold text-xl h-15">{project.title}</span>
       <span className="border rounded-3xl p-1 text-green-500 text-center tracking-wider">{project.tools}</span>
