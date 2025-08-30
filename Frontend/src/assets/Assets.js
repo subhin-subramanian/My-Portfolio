@@ -34,6 +34,13 @@ import frontend from './services_images/frontend.webp'
 import backend from './services_images/backend.jpg'
 import mern from './services_images/MERN.jpg'
 
+import school from './about/school.jpg'
+import college from './about/college.png'
+import work_1 from './about/work_1.png'
+import life from './about/life.png'
+import vision from './about/vision.png'
+import pandemic from './about/pandemic.png'
+
 
 export const projects =[
     {
@@ -102,7 +109,7 @@ export const projects =[
         github_link :'https://github.com/subhin-subramanian/Core-It-App',
         live_link :''
     }
-]
+];
 
 export const icons = {
     coverPic,
@@ -126,7 +133,7 @@ export const icons = {
     mongodb,
     render_icon,
     netlify
-}
+};
 
 export const services = [
     {
@@ -165,5 +172,37 @@ export const services = [
         ],
         image: mern
     }
+];
 
-]
+export const about = [
+    {
+        title: 'The Begining - 2011',
+        description: 'I completed my high school in 2011 at THSS Vattamkulam, Kerala, India, an institution managed by IHRD (Institute of Human Resources Development). During grades 8 to 12, I was introduced to programming through DOS, BASIC, C, C+, and C++. Alongside, I also studied Electronics and Electrical, which later complemented my technical journey.',
+        icon: school
+    },
+    {
+        title: 'College - 2012 to 2016',
+        description: 'In 2012, I pursued a Bachelor’s degree in Mechanical Engineering at Sreepathy Institute of Management and Technology (SIMAT) under Calicut University. I graduated in 2016 with First Class honors.',
+        icon: college
+    },
+    {
+        title: 'Early Career',
+        description: 'My initial ambition was to work on offshore oil rigs, but the global oil and gas crisis in 2016 changed my path. I began my career with a marine maintenance startup in Bahrain. Being one of the first three employees gave me the chance to wear multiple hats—operations, accounting, sales, and more. Those 2.5 years taught me adaptability, resourcefulness, and how to learn on the go.',
+        icon: work_1
+    },
+    {
+        title: 'Pandemic Setback',
+        description: 'In March 2020, I returned to India for visa renewal, only to face the COVID-19 lockdown a week later. The company I worked with shut down, and both my father and brother also lost their jobs. It was a tough time that reshaped my outlook on life and work.',
+        icon: pandemic
+    },
+    {
+        title: 'Restarting the Journey',
+        description: 'To support my family, I helped set up a small livestock farm and later transitioned into telecommunications as an Optical Fiber Cable Splicer and network maintenance technician. Switching between part-time and full-time roles, I built resilience and problem-solving skills that still shape how I approach challenges today.',
+        icon: life
+    },
+    {
+        title: 'My Vision',
+        description: 'Now, my dream is to turn ideas into applications that people can actually use and enjoy—tools that make everyday life a little easier, a little smarter, and maybe even a little more fun.',
+        icon: vision
+    }
+];
