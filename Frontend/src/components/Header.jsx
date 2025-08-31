@@ -33,27 +33,10 @@ function Header() {
         <Link to={'/about'} className='text-[#060b64] dark:text-white text-sm sm:text-lg font-medium hover:!text-blue-500 transition'>About</Link>
       </nav>
 
-      <button className='fixed top-5 right-2 cursor-pointer text-xl rounded-full shadow-md shadow-blue-500' onClick={() => setDarkMode(!darkMode)}>
+      <button className='fixed top-20 sm:top-5 right-8 sm:right-2 cursor-pointer sm:text-xl rounded-full shadow-md shadow-blue-500' onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? <IoSunnyOutline className='!text-white'/>:<IoMoonOutline/>}
       </button>
-        
-
-        {/* Navbar toggle switch for small screens*/}
-        {/* {navOpen && <IoMdClose className='sm:hidden text-2xl border-2 p-1  rounded-md text-[#4349b3] my-auto' onClick={()=>setNavOpen(!navOpen)}/>}
-        {!navOpen && <FaBars className='sm:hidden text-2xl border-2 p-1  rounded-md text-[#4349b3] my-auto 'onClick={()=>setNavOpen(!navOpen)}/>} */}
-
-        {/* Navbar for small screens*/}
-        {/* {navOpen && 
-        <nav className="sm:hidden flex flex-col font-semibold text-[17px] items-center gap-5 py-5 bg-white z-10">
-          <Link to={'/'}>Home</Link>
-          <Link to={'/projects'}>Projects</Link>
-          <Link to={'/blogs'}>Blogs</Link>
-          <Link to={'/about'}>About</Link>
-        </nav>} */}
-
-       
-  
-
+    
     </div>
   )
 }
