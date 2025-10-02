@@ -4,6 +4,7 @@ import image_11 from './images/Cable_Network_thumb.png';
 import image_21 from './images/1Cent_Property.png';
 import image_22 from './images/Blog_thumb.png';
 import image_23 from './images/Core_it_app_thumb.png';
+import image_24 from './images/portfolio_thumb.png';
 
 import coverPic from './images/coverPic.jpg'
 
@@ -49,7 +50,7 @@ export const projects =[
         category : 'HCJ',
         tools : 'HTML, CSS, Vanila JavaScript',
         image : image_1,
-        description : 'A webiste for a computer shop which always do the installation and manintenance of survelience systems. (This same project is elaborated for the client to make a fully fledged e-commerce MERN Stack app for computer sales)',
+        description : 'Website for a computer shop which also do the installation and maintenance of surveillance systems. (This same project is elaborated for the client to make a fully fledged e-commerce MERN Stack app for computer sales)',
         video_link :'https://www.youtube.com/watch?v=GP5mXRlbmBU&t=4s',
         github_link :'https://github.com/subhin-subramanian/CoreIt',
         live_link :'https://ubiquitous-florentine-546bef.netlify.app/'
@@ -75,6 +76,17 @@ export const projects =[
         video_link :'https://www.youtube.com/watch?v=2WIy6xggqP4&t=36s',
         github_link :'https://github.com/subhin-subramanian/Cable-Website',
         live_link :'https://d-starcablenetwork.netlify.app/complaints'
+    },
+    {
+        _id : 132,
+        title : 'My portfolio site',
+        category : 'R&T',
+        tools : 'React and Tailwind CSS',
+        image : image_24,
+        description : 'My personal portfolio showcasing my projects and skills.',
+        video_link : '',
+        github_link : 'https://github.com/subhin-subramanian/My-Portfolio',
+        live_link : 'https://portfolio-subhi.netlify.app/',
     },
     {
         _id : 141,
@@ -104,8 +116,8 @@ export const projects =[
         category : 'MERN',
         tools : 'Razorpay, MongoDB, Express,React,Node',
         image : image_23,
-        description : 'A MERN application for a blogging platform with user authentication, post creation, and comment (creation, Deletion and liking) features',
-        video_link :'',
+        description : 'A MERN application for a computer and its parts sales enterprise. cloudinary is used for image uploads, JWT for authentication, Razorpay for payment window',
+        video_link :'https://lnkd.in/gbUUZuMZ',
         github_link :'https://github.com/subhin-subramanian/Core-It-App',
         live_link :'https://core-it-solutions.onrender.com/'
     }
