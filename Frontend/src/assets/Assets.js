@@ -5,6 +5,8 @@ import image_21 from './images/1Cent_Property.png';
 import image_22 from './images/Blog_thumb.png';
 import image_23 from './images/Core_it_app_thumb.png';
 import image_24 from './images/portfolio_thumb.png';
+import image_25 from './images/Chat_Buddy.png'
+
 
 import coverPic from './images/coverPic.jpg'
 
@@ -94,7 +96,7 @@ export const projects =[
         category : 'MERN',
         tools : 'MongoDB, Express,React,Node,JWT',
         image : image_21,
-        description :'A MERN application with JWT authentication, user and admin roles, Ad request and posting functionality, used Cloudinary for image uploads.',
+        description :'A MERN application with JWT authentication, Google Auth functionality, user and admin roles, Ad request and posting functionality, used Cloudinary for image uploads.',
         video_link :'https://www.youtube.com/watch?v=WhtVz_DedqA&t=19s',
         github_link :'https://github.com/subhin-subramanian/MERN-Estate',
         live_link :'https://one-cent-property.onrender.com/'
@@ -105,7 +107,7 @@ export const projects =[
         category : 'MERN',
         tools : 'MongoDB, Express,React,Node,Flowbite',
         image : image_22,
-        description : 'A MERN application for a blogging platform with user authentication, post creation, and comment (creation, Deletion and liking) features',
+        description : 'A MERN application for a blogging platform with user authentication, Google OAuth functionality, post creation, and comment (creation, Deletion and liking) features. Originally made with js, then migrated to Typescript',
         video_link :'https://www.youtube.com/watch?v=8-hxwptb7xw',
         github_link :'https://github.com/subhin-subramanian/MERN-Blog',
         live_link :'https://subhins-blog.onrender.com/'
@@ -116,10 +118,21 @@ export const projects =[
         category : 'MERN',
         tools : 'Razorpay, MongoDB, Express,React,Node',
         image : image_23,
-        description : 'A MERN application for a computer and its parts sales enterprise. cloudinary is used for image uploads, JWT for authentication, Razorpay for payment window',
+        description : 'A MERN application for a computer and its parts sales enterprise. cloudinary is used for image uploads, JWT for authentication, Razorpay for payment window, Originally made with js, then migrated to Typescript',
         video_link :'https://lnkd.in/gbUUZuMZ',
         github_link :'https://github.com/subhin-subramanian/Core-It-App',
         live_link :'https://core-it-solutions.onrender.com/'
+    },
+    {
+        _id : 144,
+        title : 'Next.js Chat Application',
+        category : 'Nextjs',
+        tools : 'Nextjs, Stream, Tenstack Query, Mongoose',
+        image : image_25,
+        description : 'A Nextjs chat application, made with keeping future scalability in mind. Stream is used for chat services, Tenstack Query is implemented for light weight state management',
+        video_link : 'https://www.youtube.com/@Developer_Monkey-x3z',
+        github_link : 'https://github.com/subhin-subramanian/Chat-Buddy',
+        live_link : 'https://chat-buddy-qray9puy4-subhins-projects-bfe8b7b6.vercel.app/'
     }
 ];
 
